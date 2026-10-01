@@ -14,6 +14,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .photo-col { display: flex; flex-direction: column; align-items: center; gap: 12px; flex-shrink: 0; }
+    .photo-icons { display: flex; gap: 10px; justify-content: center; }
+    .photo-icons a {
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--border); color: var(--muted);
+      transition: color .15s, border-color .15s, background .15s;
+    }
+    .photo-icons a:hover { color: var(--blue); border-color: var(--blue); background: var(--blue-lt); }
+    .photo-icons svg { width: 16px; height: 16px; fill: currentColor; }
+  </style>
 </head>
 <body>
 
@@ -35,22 +47,35 @@
 
   <!-- ── Bio ─────────────────────────────────────────────── -->
   <div class="bio-row">
-    <img class="bio-photo" src="sw.png" alt="Shihan Wang">
+    <div class="photo-col">
+      <img class="bio-photo" src="sw.png" alt="Shihan Wang">
+      <div class="photo-icons">
+        <!-- Google Scholar -->
+        <a href="https://scholar.google.com/citations?user=j61lHeEAAAAJ&hl=en" target="_blank" title="Google Scholar">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5v8H7v-6h10v6h3.5V9.5z"/></svg>
+        </a>
+        <!-- Email -->
+        <a href="contact.html" title="Contact">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <!-- CV -->
+        <a href="cv.html" title="CV">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 13h8v1.5H8V13zm0 3h8v1.5H8V16zm0-6h5v1.5H8V10z"/></svg>
+        </a>
+      </div>
+    </div>
     <div class="bio-text">
       <h1>Shihan Wang</h1>
       <p class="bio-tagline">
         Tenured Assistant Professor &nbsp;·&nbsp;
-        Department of Information &amp; Computing Sciences &nbsp;·&nbsp;
-        Utrecht University &nbsp;·&nbsp;
-        Intelligent Systems Lab
+        Utrecht University 
       </p>
       <p>
         I am a Tenured Assistant Professor at the
         <a href="https://www.uu.nl/en/organisation/department-of-information-and-computing-sciences" target="_blank">Department of Information &amp; Computing Sciences</a>
         of Utrecht University, where I am part of the
         <a href="https://www.uu.nl/en/research/intelligent-systems" target="_blank">Intelligent Systems Lab</a>.
-        My research focuses on single-agent and multi-agent reinforcement learning and their
-        application to sequential decision-making problems.
+        My research focuses on reinforcement learning and their application to sequential decision-making problems.
       </p>
       <p>
         Before joining Utrecht, I was a Postdoctoral Researcher at the
@@ -63,11 +88,6 @@
         at ETH Zurich (2016–2017). I also hold an MSc in Artificial Intelligence from the
         University of Edinburgh and a BEng in Software Engineering from Northeastern University, China.
       </p>
-      <div class="bio-links">
-        <a href="https://scholar.google.com/citations?user=j61lHeEAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </div>
     </div>
   </div>
 
@@ -88,8 +108,8 @@
       <h3>1 &nbsp;Multi-Agent RL with Communication</h3>
       <p style="margin-left: 20px; margin-top: 4px;">
         How can multiple agents learn to communicate and coordinate effectively?
-        I study emergent communication protocols and coordination strategies in cooperative
-        and mixed-motive multi-agent settings.
+        [<a href="https://link.springer.com/article/10.1007/s10458-023-09633-6" target="_blank">1</a>,
+         <a href="https://rlj.cs.umass.edu/2026/papers/Paper130.html" target="_blank">2</a>]
       </p>
     </div>
 
@@ -98,6 +118,8 @@
       <p style="margin-left: 20px; margin-top: 4px;">
         How can we incorporate human constraints or domain knowledge into reinforcement learning
         for safer, more interpretable, and more data-efficient policies?
+        [<a href="https://dl.acm.org/doi/abs/10.65109/JWPH6906" target="_blank">3</a>,
+         <a href="https://journals.sagepub.com/doi/abs/10.3233/FAIA240751" target="_blank">4</a>]
       </p>
     </div>
 
@@ -106,18 +128,17 @@
       <p style="margin-left: 20px; margin-top: 4px;">
         How can reinforcement learning support large language models to better align with
         human preferences for conversational human–AI interaction and collaboration?
+        [<a href="https://arxiv.org/abs/2604.12500" target="_blank">5</a>,
+         <a href="https://aclanthology.org/2025.findings-emnlp.968/" target="_blank">6</a>,
+         <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00717/125484" target="_blank">7</a>]
       </p>
     </div>
 
-    <div class="focus-tags">
-      <span class="focus-tag">Multi-Agent RL</span>
-      <span class="focus-tag">Reinforcement Learning</span>
-      <span class="focus-tag">Emergent Communication</span>
-      <span class="focus-tag">Neuro-Symbolic AI</span>
-      <span class="focus-tag">Human-Centred AI</span>
-      <span class="focus-tag">LLM Alignment</span>
-      <span class="focus-tag">Sequential Decision-Making</span>
-    </div>
+    <p>
+      Among various application domains, I am particularly interested in healthcare,
+      where I am currently involved in several ongoing projects.
+    </p>
+
   </div>
 
   <!-- ── Recent News ───────────────────────────────────────── -->
