@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name – Home</title>
+  <title>Shihan Wang – Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 
 <nav>
   <div class="nav-inner">
-    <span class="nav-name">Your Name</span>
+    <span class="nav-name">Shihan Wang</span>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="cv.html">CV</a></li>
@@ -29,21 +29,38 @@
 
   <!-- ── Bio ─────────────────────────────────────────────── -->
   <div class="bio-row">
-    <!-- Replace the placeholder div with: <img class="bio-photo" src="photo.jpg" alt="Your Name"> -->
-    <div class="bio-photo-placeholder">Your<br>photo</div>
+    <img class="bio-photo" src="SWang.png" alt="Shihan Wang">
     <div class="bio-text">
-      <h1>Your Full Name</h1>
-      <p class="bio-tagline">Associate Professor · Department Name · University Name</p>
+      <h1>Shihan Wang</h1>
+      <p class="bio-tagline">
+        Tenured Assistant Professor &nbsp;·&nbsp;
+        Department of Information &amp; Computing Sciences &nbsp;·&nbsp;
+        Utrecht University &nbsp;·&nbsp;
+        Intelligent Systems Lab
+      </p>
       <p>
-        Brief introductory sentence about who you are and where you work.
-        You can mention your research group or lab here.
+        I am a Tenured Assistant Professor at the
+        <a href="https://www.uu.nl/en/organisation/department-of-information-and-computing-sciences" target="_blank">Department of Information &amp; Computing Sciences</a>
+        of Utrecht University, where I am part of the
+        <a href="https://www.uu.nl/en/research/intelligent-systems" target="_blank">Intelligent Systems Lab</a>.
+        My research focuses on single-agent and multi-agent reinforcement learning and their
+        application to sequential decision-making problems.
+      </p>
+      <p>
+        Before joining Utrecht, I was a Postdoctoral Researcher at the
+        <a href="http://amlab.science.uva.nl/" target="_blank">Machine Learning Lab (AMLab)</a>,
+        University of Amsterdam (2017–2020). I hold a PhD in Computational Intelligence &amp;
+        Systems Science from
+        <a href="https://teranolab.sakura.ne.jp/2021/" target="_blank">Terano Lab</a>,
+        Tokyo Institute of Technology (2014–2017), during which I was a Visiting Researcher in
+        <a href="https://coss.ethz.ch/" target="_blank">Computational Social Science</a>
+        at ETH Zurich (2016–2017). I also hold an MSc in Artificial Intelligence from the
+        University of Edinburgh and a BEng in Software Engineering from Northeastern University, China.
       </p>
       <div class="bio-links">
+        <a href="https://scholar.google.com/citations?user=j61lHeEAAAAJ&hl=en" target="_blank">Google Scholar</a>
         <a href="cv.html">CV</a>
-        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://twitter.com/yourusername" target="_blank">Twitter/X</a>
-        <a href="mailto:your.email@university.edu">Email</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </div>
@@ -53,19 +70,47 @@
     <h2>Research Focus</h2>
     <hr class="section-rule" />
     <p>
-      I work on [broad description of your research area]. My work sits at the intersection of
-      [field A], [field B], and [field C], with a focus on [core problem or goal].
+      My research concentrates on single-agent and multi-agent reinforcement learning (MARL)
+      and their practical usage in sequential decision-making tasks. My primary interest
+      balances theoretical development and practical application, with an emphasis on
+      developing efficient, scalable, and reliable algorithms to solve real-world problems.
+      My overarching goal is to develop <strong>human-centred &amp; intelligent systems</strong>.
     </p>
-    <p>
-      A central theme in my research is [theme]. I develop methods that [what they do],
-      with applications in [application domains].
-    </p>
+    <p>My work currently spans three directions:</p>
+
+    <div style="margin: 18px 0 10px;">
+      <h3>1 &nbsp;Multi-Agent RL with Communication</h3>
+      <p style="margin-left: 20px; margin-top: 4px;">
+        How can multiple agents learn to communicate and coordinate effectively?
+        I study emergent communication protocols and coordination strategies in cooperative
+        and mixed-motive multi-agent settings.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <h3>2 &nbsp;Neuro-Symbolic (MA)RL</h3>
+      <p style="margin-left: 20px; margin-top: 4px;">
+        How can we incorporate human constraints or domain knowledge into reinforcement learning
+        for safer, more interpretable, and more data-efficient policies?
+      </p>
+    </div>
+
+    <div style="margin-bottom: 18px;">
+      <h3>3 &nbsp;RL for Human-Centred LLMs</h3>
+      <p style="margin-left: 20px; margin-top: 4px;">
+        How can reinforcement learning support large language models to better align with
+        human preferences for conversational human–AI interaction and collaboration?
+      </p>
+    </div>
+
     <div class="focus-tags">
-      <span class="focus-tag">Causal Inference</span>
-      <span class="focus-tag">Machine Learning</span>
+      <span class="focus-tag">Multi-Agent RL</span>
       <span class="focus-tag">Reinforcement Learning</span>
-      <span class="focus-tag">AI Safety</span>
-      <span class="focus-tag">Add your own</span>
+      <span class="focus-tag">Emergent Communication</span>
+      <span class="focus-tag">Neuro-Symbolic AI</span>
+      <span class="focus-tag">Human-Centred AI</span>
+      <span class="focus-tag">LLM Alignment</span>
+      <span class="focus-tag">Sequential Decision-Making</span>
     </div>
   </div>
 
@@ -75,39 +120,9 @@
     <hr class="section-rule" />
     <ul class="news-list">
       <li>
-        <span class="news-date">Jun 2025</span>
-        <span class="news-text">
-          <span class="news-tag tag-paper">Paper</span>
-          Our paper <em>"Paper Title Here"</em> was accepted at <strong>Conference Name 2025</strong>.
-        </span>
-      </li>
-      <li>
-        <span class="news-date">Apr 2025</span>
-        <span class="news-text">
-          <span class="news-tag tag-talk">Talk</span>
-          Invited talk at <strong>Workshop / Venue Name</strong> on [topic].
-        </span>
-      </li>
-      <li>
-        <span class="news-date">Jan 2025</span>
-        <span class="news-text">
-          <span class="news-tag tag-award">Award</span>
-          Received [award or grant name] from [funding body / organization].
-        </span>
-      </li>
-      <li>
-        <span class="news-date">Nov 2024</span>
-        <span class="news-text">
-          <span class="news-tag tag-paper">Paper</span>
-          <em>"Another Paper Title"</em> accepted at <strong>NeurIPS 2024</strong>.
-          <a href="#">[paper]</a>
-        </span>
-      </li>
-      <li>
-        <span class="news-date">Sep 2024</span>
-        <span class="news-text">
-          <span class="news-tag tag-misc">Misc</span>
-          [Any other news: new PhD student, visiting scholar, program committee, etc.]
+        <span class="news-date">Coming soon</span>
+        <span class="news-text" style="color: var(--muted); font-style: italic;">
+          News items will appear here — see the full list on the News page.
         </span>
       </li>
     </ul>
@@ -117,7 +132,7 @@
 </main>
 
 <footer>
-  &copy; 2025 Your Name &nbsp;·&nbsp; Built with GitHub Pages
+  &copy; 2025 Shihan Wang &nbsp;·&nbsp; Utrecht University &nbsp;·&nbsp; Built with GitHub Pages
 </footer>
 
 </body>
